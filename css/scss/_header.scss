@@ -1,0 +1,46 @@
+
+
+.site-header{
+    .aws-search-field{
+        border-radius: 20px!important;
+        font-size: 0.9rem;
+        padding-left: 1.4rem;
+    }
+
+    @include media-breakpoint-down(lg){
+        .cart{
+            padding-top: 8px;
+        }
+    }
+}
+
+
+.main-navigation{
+    font-weight: 600;
+    a{
+        color:#ffffff;
+        padding:4px 2rem ;
+        &:hover{
+            background:#fca1f1;
+        }
+    }
+    
+    .menu-toggle{
+        background: $primary;
+        color: white;
+        border:none;
+    }
+
+
+    @include media-breakpoint-down(lg){
+        a{
+            font-size:10px;
+        }
+
+        .menu{
+            display:flex;
+            justify-content: center;
+        }
+    }
+    
+}

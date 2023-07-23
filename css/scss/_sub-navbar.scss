@@ -1,0 +1,39 @@
+$gray: #e6e6e6;
+$light-purble:rgba(255, 135, 255, 0.2);
+
+.announcemment-bar{
+    font-size: 13px;
+    border-bottom: 1px solid $gray;
+    padding: 10px 0px;
+    &__list{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: inline-flex;
+        li{
+            margin:0 5px;
+            display: flex;
+            align-items: center;
+            
+            .bi{
+                background: $light-purble;
+                display:  inline-flex;
+                justify-content: center;
+                align-items: center;
+                width: 50px;
+                height: 50px;
+                margin-right: 6px;
+            }
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+
+
+    @include media-breakpoint-down(lg){
+        display:none;
+    }
+}
+
+

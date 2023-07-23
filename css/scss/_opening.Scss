@@ -1,0 +1,49 @@
+.opening{
+    font-size: 20px;
+    font-weight: 400;
+    .opening-paragraph{
+        font-size: 12px;
+        width: 40%;
+        margin: auto;
+    }
+}
+
+
+.categories {
+    background-color: #f9f9f9;
+  
+    &__col  {
+      height: 212px;
+      a{
+         height: 100%;
+
+        img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+      h2 {
+        background-color: rgba(127, 24, 127, 0.8);
+        z-index:2;
+      }
+
+      .cover{
+        z-index:1;
+        background: rgba(167, 4, 4,0.2);
+      }
+      }
+
+      
+      
+    }
+
+
+
+  
+    @include media-breakpoint-down(md) {
+      &__col {
+        height: 333px;
+      }
+    }
+  }
+  
